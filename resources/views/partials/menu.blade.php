@@ -90,20 +90,20 @@
                     <i class="fa-fw fas fa-cogs c-sidebar-nav-icon">
 
                     </i>
-                    {{ trans('cruds.search.title') }}
+                    My Searches
                 </a>
             </li>
         @endcan
-        @can('news_source_access')
-            <li class="c-sidebar-nav-item">
-                <a href="{{ route("admin.news-sources.index") }}" class="c-sidebar-nav-link {{ request()->is("admin/news-sources") || request()->is("admin/news-sources/*") ? "c-active" : "" }}">
-                    <i class="fa-fw fas fa-cogs c-sidebar-nav-icon">
+{{--        @can('news_source_access')--}}
+{{--            <li class="c-sidebar-nav-item">--}}
+{{--                <a href="{{ route("admin.news-sources.index") }}" class="c-sidebar-nav-link {{ request()->is("admin/news-sources") || request()->is("admin/news-sources/*") ? "c-active" : "" }}">--}}
+{{--                    <i class="fa-fw fas fa-cogs c-sidebar-nav-icon">--}}
 
-                    </i>
-                    {{ trans('cruds.newsSource.title') }}
-                </a>
-            </li>
-        @endcan
+{{--                    </i>--}}
+{{--                    {{ trans('cruds.newsSource.title') }}--}}
+{{--                </a>--}}
+{{--            </li>--}}
+{{--        @endcan--}}
         @if(file_exists(app_path('Http/Controllers/Auth/ChangePasswordController.php')))
             @can('profile_password_edit')
                 <li class="c-sidebar-nav-item">
