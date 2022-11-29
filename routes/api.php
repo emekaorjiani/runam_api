@@ -22,3 +22,4 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 
 Route::post('/login', [App\Http\Controllers\Api\V1\Admin\AuthController::class, 'login']);
 Route::post('/register', [App\Http\Controllers\Api\V1\Admin\AuthController::class, 'register']);
+Route::post('/logout', [App\Http\Controllers\Api\V1\Admin\AuthController::class, 'logout']);

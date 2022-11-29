@@ -60,16 +60,15 @@ class AuthController extends Controller
     }
 
 
-    public function store(Request $request)
+    public function logout(Request $request)
     {
-        $this->validate($request, [
-            'email' => 'required|email',
-            'password' => 'required',
-        ]);
+        $user = User::where('email', $request->email)->first();
 
-        if (!auth()->attempt($request->only('email', 'password'))){
-            throw new AuthenticationException();
+        if ($user) {
+            $user->tokens()->delete();
         }
+
+        return response()->noContent();
     }
 
 
