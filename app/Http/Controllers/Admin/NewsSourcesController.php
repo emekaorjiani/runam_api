@@ -34,7 +34,11 @@ class NewsSourcesController extends Controller
 
     public function store(StoreNewsSourceRequest $request)
     {
-        $newsSource = NewsSource::create($request->all());
+//        $newsSource = NewsSource::create($request->all());
+        $response = Http::get('http://127.0.0.1:8500');
+        $data = json_decode($response->body(), true);
+        dd($data);
+//        return view('ControlmAPI.netvigie')
 
         return redirect()->route('admin.news-sources.index');
     }
