@@ -79,22 +79,22 @@
                 <small>'e.g. Former Buhari minister asks court to disqualify Tinubu and Atiku on vote-buying allegation'</small>
                 <textarea name="news_title" class="form-control" id="news_title" rows="3"></textarea>
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Source Name <span class="text-danger">*</span></label><br>
-                <small>Select from the list or use Others if not in the list.</small>
-                <select type="text" name="source" class="form-control" id="source" required placeholder="Enter Source Name: 'e.g.: Punch, Thisday, Vanguard'">
-                    @php
-                        $sources = \App\Models\NewsSource::pluck('source', 'id')->prepend(trans('global.pleaseSelect'), '');
-                    @endphp
-                    @foreach($sources as $id => $entry)
-                        <option value="{{ $id }}" {{ old('source_id') == $id ? 'selected' : '' }}>{{ $entry }}</option>
-                    @endforeach
-                </select>
-            </div>
-            <div class="mb-3">
-                <label for="website" class="form-label">Enter Website (optional) </label>
-                <input type="text" name="website" class="form-control" id="website" placeholder="e.g. www.www.vanguardngr.com">
-            </div>
+{{--            <div class="mb-3">--}}
+{{--                <label for="exampleFormControlTextarea1" class="form-label">Source Name <span class="text-danger">*</span></label><br>--}}
+{{--                <small>Select from the list or use Others if not in the list.</small>--}}
+{{--                <select type="text" name="source" class="form-control" id="source" required placeholder="Enter Source Name: 'e.g.: Punch, Thisday, Vanguard'">--}}
+{{--                    @php--}}
+{{--                        $sources = \App\Models\NewsSource::pluck('source', 'id')->prepend(trans('global.pleaseSelect'), '');--}}
+{{--                    @endphp--}}
+{{--                    @foreach($sources as $id => $entry)--}}
+{{--                        <option value="{{ $id }}" {{ old('source_id') == $id ? 'selected' : '' }}>{{ $entry }}</option>--}}
+{{--                    @endforeach--}}
+{{--                </select>--}}
+{{--            </div>--}}
+{{--            <div class="mb-3">--}}
+{{--                <label for="website" class="form-label">Enter Website (optional) </label>--}}
+{{--                <input type="text" name="website" class="form-control" id="website" placeholder="e.g. www.www.vanguardngr.com">--}}
+{{--            </div>--}}
                 <button class="btn btn-lg btn-pills btn-warning" type="submit"> Verify </button>
 
             </form>

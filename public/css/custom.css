@@ -1,3 +1,49 @@
+#topnav .navigation-menu > li.active > a, #topnav .navigation-menu > li:hover > a {
+    color: #f17425;
+}
+@media (min-width: 992px){
+    #topnav .navigation-menu > li.active > a, #topnav .navigation-menu > li:hover > a {
+        color: #f17425 !important;
+    }
+    #topnav .navigation-menu > li > a:active, #topnav .navigation-menu > li > a:hover {
+        color: #f17425;
+    }
+    #topnav .navigation-menu > li.active > a, #topnav .navigation-menu > li:hover > a {
+        color: #f17425 !important;
+    }
+}
+.footer .footer-bar, .footer .footer-border {
+    border-top: 1px solid #f68431;
+}
+.back-to-top {
+    position: fixed;
+    z-index: 99;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    height: 36px;
+    width: 36px;
+    line-height: 33px;
+    border-radius: 6px;
+    text-align: center;
+    background: #f17425 !important;
+    color: #fff !important;
+}
+.text-footer {
+    color: #552401 !important;
+}
+footer {
+    background: #552401 !important;
+    position: relative;
+    color: #adb5bd;
+}
+.bg-soft-warning {
+    background-color: rgb(211 170 84)!important;
+    border: 1px solid rgb(255 249 249 / 10%)!important;
+    color: #000000!important;
+}
 .ck-editor__editable,
 textarea {
     min-height: 150px;
@@ -130,3 +176,5 @@ table.dataTable thead .sorting_desc {
 .custom-select.form-control-sm {
     padding: 0.25rem 1.5rem;
 }
+
+

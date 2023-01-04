@@ -6,7 +6,7 @@
             <div class="row mt-5 justify-content-center">
                 <div class="col-lg-12 text-center">
                     <div class="pages-heading">
-                        <h4 class="title text-white title-dark mb-0"> About us</h4>
+                        <h4 class="title text-white title-dark mb-0"> About</h4>
                     </div>
                 </div>  <!--end col-->
             </div><!--end row-->
@@ -14,8 +14,8 @@
             <div class="position-breadcrumb">
                 <nav aria-label="breadcrumb" class="d-inline-block">
                     <ul class="breadcrumb rounded shadow mb-0 px-4 py-2">
-                        <li class="breadcrumb-item"><a href="{{ url('/') }}">Run-Am</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">About us</li>
+                        <li class="breadcrumb-item" aria-current="page">About Run Am</li>
+
                     </ul>
                 </nav>
             </div>
@@ -50,11 +50,25 @@
                             <h4 class="title mb-4">
                                 Why we built Run-Am
                             </h4>
-                            <p class="text-muted">Start working with <span class="text-warning fw-bold">Fake news</span> is a widespread problem in Nigeria, and it is vital that we make sure that we are informed in our society. According to a study from Pierce College, there were over 8.7 million users engaging with fake news on Facebook alone. In the backdrop of the coming general election in 2023 in the country, it is important to ensure that readers know what information is true or not. The application, News Source Verification feature of Run-Am, helps to filter whether the news headline is from verified and unverified sources and informs the users on what news items are verified or not. The Run-Am application is built with the Artificial Intelligence methodology of Natural Language Processing!</p>
-                            <a href="https://risenetworks.org" class="btn btn-warning mt-3" target="_blank">Contact us</a>
+                            <p class="text-muted"><span class="text-warning fw-bold">Run Am </span> is the Nigerian Pidgin word that captures the intention to verify or fact-check news source to be sure it is valid and authentic. Not news intended to disrupt society or cause panic or mayhem.
+                                <span class="text-warning fw-bold">Run Am </span> is an AI-enabled real-time news authentication and verification application for data-driven and investigative journalism to mobilize and catalyze citizens' action to tackle corruption and other related practices. For accountable elections and governance in Nigeria.
+                                <span class="text-warning fw-bold"> The Run Am App </span> has an inbuilt algorithm to verify information in circulation about the electoral processes, politics, and governance to promote Electoral accountability and Checkmating fraud or corrupt practices.
+                                </p>
+                            <a href="https://risenetworks.org/contact-us/" class="btn btn-warning mt-3" target="_blank">Contact us</a>
                         </div>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
         </div><!--end container-->
+    </section>
+    <div class="row my-md-5 pt-md-3 my-4 pt-2 pb-lg-4 justify-content-center">
+    </div>
+
+{{--        <div class="position-relative">--}}
+{{--            <div class="shape overflow-hidden text-footer">--}}
+{{--                <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                    <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>--}}
+{{--                </svg>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 @endsection

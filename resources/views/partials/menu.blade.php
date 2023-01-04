@@ -94,6 +94,14 @@
                 </a>
             </li>
         @endcan
+           <li class="c-sidebar-nav-item">
+{{--               {{ request()->is('profile/password') || request()->is('profile/password/*') ? 'c-active' : '' }}--}}
+               <a class="c-sidebar-nav-link" href="#">
+                   <i class="fa-fw fas fa-photo c-sidebar-nav-icon">
+                   </i>
+                   Image Verification
+               </a>
+           </li>
 {{--        @can('news_source_access')--}}
 {{--            <li class="c-sidebar-nav-item">--}}
 {{--                <a href="{{ route("admin.news-sources.index") }}" class="c-sidebar-nav-link {{ request()->is("admin/news-sources") || request()->is("admin/news-sources/*") ? "c-active" : "" }}">--}}
