@@ -18,7 +18,7 @@ class AuthController extends Controller
 {
     use HasApiTokens, HasFactory, Notifiable, HttpResponses;
 
-    public function register(Request $request)
+    public function register(Request $request): \Illuminate\Http\JsonResponse
     {
         $request->validate([
             'name' => 'required|string|max:255',
@@ -35,12 +35,12 @@ class AuthController extends Controller
 
         $user->roles()->attach(2); // Simple user role
 
-        return $user->createToken($request->device_name)->plainTextToken;
+        return response()->json($user->createToken($request->device_name)->plainTextToken, 200);
 
 
     }
 
-    public function login(Request $request)
+    public function login(Request $request): \Illuminate\Http\JsonResponse
     {
         $request->validate([
             'email' => 'required|email',
@@ -56,11 +56,12 @@ class AuthController extends Controller
             ]);
         }
 
-        return $user->createToken($request->device_name)->plainTextToken;
+        return response()->json($user->createToken($request->device_name)->plainTextToken,200);
+
     }
 
 
-    public function logout(Request $request)
+    public function logout(Request $request): \Illuminate\Http\Response
     {
         $user = User::where('email', $request->email)->first();
 
