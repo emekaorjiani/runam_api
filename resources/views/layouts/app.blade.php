@@ -26,6 +26,15 @@
     <!-- Style Css-->
     <link href="{{ asset('assets/css/style.min.css') }}" id="color-opt" class="theme-opt" rel="stylesheet" type="text/css" />
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GERXK2QEH5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GERXK2QEH5');
+    </script>
 
 </head>
 

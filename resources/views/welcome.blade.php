@@ -7,7 +7,7 @@
             <div class="col-lg-7 col-md-7">
                 <div class="title-heading me-lg-4">
                     <h1 class="heading mb-3">
-                        Is the news you are read <span class="text-warning">authentic</span> ?
+                        Is the news you are reading <span class="text-warning">authentic</span> ?
                     </h1>
                     Welcome to The Run Am Mobile App. You can verify and fact-check any news or information before you share such with other people via Word-Of-Mouth or Social Media.
                     </p>
