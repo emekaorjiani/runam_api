@@ -6,6 +6,9 @@ Route::get('/', function (){
 });
 Route::get('about', 'PagesController@about')->name('about');
 Route::get('terms', 'PagesController@terms')->name('terms');
+Route::get('search', 'PagesController@search')->name('search');
+Route::post('searchImage', 'PagesController@searchImage')->name('searchImage');
+Route::post('file-upload', 'PagesController@dropzoneFileUpload')->name('dropzoneFileUpload');
 Route::get('privacy', 'PagesController@privacy')->name('privacy');
 
 //Route::get('/home', function () {
